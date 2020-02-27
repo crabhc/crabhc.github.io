@@ -16,6 +16,7 @@ $('#p05-hover').click(function () {
     $('#player05').animate({
         opacity: '0'
     });
+    $('#i05-hover').hide();
     $('#p05-hover').hide();
     $('#panel_3').animate({
         height: '300px',
