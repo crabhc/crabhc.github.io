@@ -62,3 +62,45 @@ $('#panel_7').click(function () {
         height: '800px'
     })
 })
+
+
+const panel3 = document.querySelector('#panel_3');
+const panel4 = document.querySelector('#panel_4');
+
+const panelOptions = {
+    rootMargin: "-50% 0px -50% 0px"
+};
+
+const panel3Observer = new IntersectionObserver(function (entries, panelObserver) {
+    entries.forEach(entry => {
+        console.log(entry.target);
+        if (!entry.isIntersecting) {
+            $('#player03').animate({
+                opacity: '0'
+            });
+        } else {
+            $('#player03').animate({
+                opacity: '1'
+            });
+        }
+    });
+}, panelOptions);
+
+panel3Observer.observe(panel3);
+
+const panel4Observer = new IntersectionObserver(function (entries, panelObserver) {
+    entries.forEach(entry => {
+        console.log(entry.target);
+        if (!entry.isIntersecting) {
+            $('#player04').animate({
+                opacity: '0'
+            });
+        } else {
+            $('#player04').animate({
+                opacity: '1'
+            });
+        }
+    });
+}, panelOptions);
+
+panel4Observer.observe(panel4);
