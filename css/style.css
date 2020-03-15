@@ -20,7 +20,7 @@ header .outer {
   width: 1200px;
   height: 100vh;
   margin: 0 auto;
-  background-image: url(images/header-bg.gif);
+  background-image: url(../images/header-bg.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
