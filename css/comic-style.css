@@ -1,0 +1,88 @@
+#comic-section {
+    width: 100%;
+    padding-top: 100px;
+}
+
+#comic-section .container {
+    margin: 0 auto;
+    width: 600px;
+    padding-top: 50px;
+    position: relative;
+}
+
+
+/* COLONNE */
+.column {
+    float: left;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------ */
+
+
+.panels {
+    overflow: hidden;
+    position: relative;
+    border: 4px solid black;
+}
+
+.panels img {
+    position: absolute;
+}
+
+.panels3x3 {
+    width: 282px;
+    height: 292px;
+}
+
+.panels6x3 {
+    width: 592px;
+    height: 272px;
+}
+
+.panels6x6 {
+    width: 592px;
+    height: 592px;
+}
+
+.margin-up {
+    margin-top: 10px;
+}
+
+.margin-after {
+    margin-right: 10px
+}
+
+.margin-under {
+    margin-bottom: 20px;
+}
+
+.margin-before {
+    margin-left: 10px;
+}
+
+.jack {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.appear {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.bg-11 {
+    background-image: url("../../vignette/_new/11bg.png");
+    transition: background-image 1s;
+}
+
+.bg-12 {
+    background-image: url("../../vignette/_new/12bg.png");
+    transition: background-image 1s;
+}
