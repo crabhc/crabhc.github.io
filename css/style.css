@@ -12,6 +12,7 @@ body {
 }
 
 header {
+  min-width: 600px;
   height: 100vh;
   background-color: black;
 }
