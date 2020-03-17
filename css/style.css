@@ -1,44 +1,29 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+* {
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 18px;
-  font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0;
+    font-family: Arial;
 }
 
 header {
-  min-width: 600px;
-  height: 100vh;
-  background-color: black;
-}
-
-header .outer {
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  background-image: url(../images/header-bg.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 header .inner {
-  padding-top: 35vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-image: url(../images/header-bg.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header h1 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 80px;
-  color: white;
-}
-
-header h1 span {
-  font-size: 200px;
-  line-height: 130px;
+    display: none;
 }

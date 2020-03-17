@@ -1,85 +1,100 @@
-#comic-section {
-  width: 100%;
-  padding-top: 100px;
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
 }
 
-#comic-section .container {
-  margin: 0 auto;
-  width: 600px;
-  padding-top: 50px;
-  position: relative;
+.row {
+    /* IE10 */
+    display: -ms-flexbox;
+    display: flex;
+    /* IE10 */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    max-width: 600px;
+    margin-top: 8px;
 }
 
-/* COLONNE */
+/* Create two equal columns that sits next to each other */
 .column {
-  float: left;
+    /* IE10 */
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 300px;
+    padding: 0 4px;
 }
 
-/* Clear floats */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+img {
+    vertical-align: middle;
+    width: 100%;
 }
 
-/* ------ */
-.panels {
-  overflow: hidden;
-  position: relative;
-  border: 4px solid black;
+.img-3x3 {
+    max-width: 300px;
 }
 
-.panels img {
-  position: absolute;
+.img-6x3 {
+    max-width: 600px;
 }
 
-.panels3x3 {
-  width: 282px;
-  height: 292px;
+.img-border {
+    position: relative;
+    overflow: hidden;
+    background: black;
+    padding: 2px;
 }
 
-.panels6x3 {
-  width: 592px;
-  height: 272px;
-}
-
-.panels6x6 {
-  width: 592px;
-  height: 592px;
-}
-
-.margin-up {
-  margin-top: 10px;
-}
-
-.margin-after {
-  margin-right: 10px
-}
-
-.margin-under {
-  margin-bottom: 20px;
-}
-
-.margin-before {
-  margin-left: 10px;
+#panel-03, #panel-15, #panel-19, #panel-26-27, #panel-30 {
+    padding: 0 8px;
 }
 
 .jack {
-  opacity: 0;
-  transition: opacity 1s;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#panel-03 .jack {}
+
+#panel-04 .jack {
+    top: -2px;
+    left: -2px;
+}
+
+#panel-05 .jack {
+    top: -2px;
+}
+
+#panel-06 .jack {
+    bottom: 2px;
+}
+
+#panel-08 .jack {
+bottom: 2px;
+}
+
+.diamond {
+    position: absolute;
+    z-index: 1;
+}
+
+#panel-11-12 .diamond {
+    bottom: 2px;
+}
+
+#panel-17-18 .diamond {
+    bottom: 1px;
+    left: 0;
+}
+
+.panel-transition {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .appear {
-  opacity: 1;
-  transition: opacity 1s;
-}
-
-.bg-11 {
-  background-image: url("../images/11bg.png");
-  transition: background-image 1s;
-}
-
-.bg-12 {
-  background-image: url("../images/12bg.png");
-  transition: background-image 1s;
+    opacity: 1;
+    transition: opacity 1s;
 }
