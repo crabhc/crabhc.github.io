@@ -1,12 +1,15 @@
 const jackScrolling = document.querySelectorAll('.jack');
 const backgroundScrolling = document.querySelectorAll('.panel-transition');
 
+var mymargin = document.getElementsByClassName('jack').clientHeight;
+
 const panelOptions = {
     rootMargin: "-50% 0px -50% 0px"
 };
 
 const backgroundOptions = {
-    rootMargin: "0px 0px -80% 0px"
+    rootMargin: "0px 0px -75% 0px",
+    threshold: 0
 };
 
 const jackObserver = new IntersectionObserver(function (entries, jackObserver) {

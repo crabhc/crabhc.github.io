@@ -1,5 +1,5 @@
 .container {
-    margin: 0 auto;
+    margin: 2% auto;
     max-width: 600px;
     width: 100%;
 }
@@ -42,50 +42,37 @@ img {
     position: relative;
     overflow: hidden;
     background: black;
-    padding: 2px;
+    padding: 4px;
 }
 
-#panel-03, #panel-15, #panel-19, #panel-26-27, #panel-30 {
+.img-foreground-position {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+}
+
+#panel-03,
+#panel-15,
+#panel-19,
+#panel-26-27,
+#panel-30 {
     padding: 0 8px;
+     !important
 }
 
 .jack {
-    position: absolute;
+   /* position: absolute; */
     opacity: 0;
     transition: opacity 1s;
 }
 
-#panel-03 .jack {}
 
-#panel-04 .jack {
-    top: -2px;
-    left: -2px;
-}
-
-#panel-05 .jack {
-    top: -2px;
-}
-
-#panel-06 .jack {
-    bottom: 2px;
-}
-
-#panel-08 .jack {
-bottom: 2px;
-}
 
 .diamond {
     position: absolute;
     z-index: 1;
-}
-
-#panel-11-12 .diamond {
-    bottom: 2px;
-}
-
-#panel-17-18 .diamond {
-    bottom: 1px;
-    left: 0;
 }
 
 .panel-transition {

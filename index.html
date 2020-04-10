@@ -14,25 +14,31 @@
 <body>
 
     <header>
-        <div class="inner">
-        <h1>UX Comics</h1>
+        <div class="container">
+            <h1>UX Comics</h1>
+            <h2>Scroll that story. A Temporal Panorama within scrolling range.</h2>
         </div>
     </header>
+
+    <div id="debug1"></div>
+    <div id="debug2"></div>
 
     <div class="container">
 
         <div class="row">
             <div id="panel-01" class="column">
-                <img class="img-border" src="images/01.png" style="width:100%; max-width: 300px">
+                <img class="img-border" src="images/01.png">
             </div>
             <div id="panel-02" class="column">
-                <img class="img-border" src="images/02.png" style="width:100%; max-width: 300px">
+                <img class="img-border" src="images/02.png">
             </div>
         </div>
 
         <div id="panel-03" class="row">
             <div class="img-border">
-                <img class="jack img-6x3" src="images/03.png">
+                <div class="img-foreground-position">
+                    <img class="jack img-6x3" src="images/03.png">
+                </div>
                 <img class="img-6x3" src="images/03bg.png">
             </div>
         </div>
@@ -40,13 +46,17 @@
         <div class="row">
             <div id="panel-04" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/04.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/04.png">
+                    </div>
                     <img class="img-3x3" src="images/04bg.png">
                 </div>
             </div>
             <div id="panel-05" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/05.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/05.png">
+                    </div>
                     <img class="img-3x3" src="images/05bg.png">
                 </div>
             </div>
@@ -55,13 +65,18 @@
         <div class="row">
             <div id="panel-06" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/06.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/06.png">
+                    </div>
                     <img class="img-3x3" src="images/06bg.png">
                 </div>
             </div>
             <div id="panel-07" class="column">
                 <div class="img-border">
-                    <img class="img-3x3" src="images/07.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/07.png">
+                    </div>
+                    <img class="img-3x3" src="images/07bg.png">
                 </div>
             </div>
         </div>
@@ -69,7 +84,9 @@
         <div class="row">
             <div id="panel-08" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/08.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/08.png">
+                    </div>
                     <img class="img-3x3" src="images/08bg.png">
                 </div>
             </div>
@@ -83,16 +100,22 @@
         <div class="row">
             <div id="panel-10" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/10.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/10.png">
+                    </div>
                     <img class="img-3x3" src="images/10bg.png">
                 </div>
             </div>
             <div id="panel-11-12" class="column">
                 <div class="img-border">
-                    <img class="diamond img-3x3" src="images/11-12d.png">
-                    <img class="panel-transition img-3x3" src="images/12bg.png">
+                    <div class="img-foreground-position">
+                        <img class="diamond img-3x3" src="images/11-12d.png">
+                        <img class="jack img-3x3" src="images/11.png">
+                    </div>
+                    <div class="img-foreground-position">
+                        <img class="panel-transition img-3x3" src="images/12bg.png">
+                    </div>
                     <img class="img-3x3" src="images/11bg.png">
-
                 </div>
             </div>
         </div>
@@ -100,13 +123,17 @@
         <div class="row">
             <div id="panel-13" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/13.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/13.png">
+                    </div>
                     <img class="img-3x3" src="images/13bg.png">
                 </div>
             </div>
             <div id="panel-14" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/14.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/14.png">
+                    </div>
                     <img class="img-3x3" src="images/14bg.png">
                 </div>
             </div>
@@ -114,20 +141,31 @@
 
         <div id="panel-15" class="row">
             <div class="img-border">
-                <img class="img-6x3" src="images/15.png">
+                <div class="img-foreground-position">
+                    <img class="jack img-6x6" src="images/15.png">
+                </div>
+                <img class="img-6x3" src="images/15bg.png">
             </div>
         </div>
 
         <div class="row">
             <div id="panel-16" class="column">
                 <div class="img-border">
-                    <img class="img-3x3" src="images/16.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/16.png">
+                    </div>
+                    <img class="img-3x3" src="images/16bg.png">
                 </div>
             </div>
             <div id="panel-17-18" class="column">
                 <div class="img-border">
-                    <img class="diamond img-3x3" src="images/17-18d.png">
-                    <img class="panel-transition img-3x3" src="images/18bg.png">
+                    <div class="img-foreground-position">
+                        <img class="diamond img-3x3" src="images/17-18d.png">
+                        <img class="jack img-3x3" src="images/17.png">
+                    </div>
+                    <div class="img-foreground-position">
+                        <img class="panel-transition img-3x3" src="images/18bg.png">
+                    </div>
                     <img class="img-3x3" src="images/17bg.png">
                 </div>
             </div>
@@ -135,7 +173,9 @@
 
         <div id="panel-19" class="row">
             <div class="img-border">
-                <img class="jack img-6x3" src="images/19.png">
+                <div class="img-foreground-position">
+                    <img class="jack img-6x3" src="images/19.png">
+                </div>
                 <img class="img-6x3" src="images/19bg.png">
             </div>
         </div>
@@ -143,13 +183,17 @@
         <div class="row">
             <div id="panel-20" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/20.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/20.png">
+                    </div>
                     <img class="img-3x3" src="images/20bg.png">
                 </div>
             </div>
             <div id="panel-21" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/21.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/21.png">
+                    </div>
                     <img class="img-3x3" src="images/21bg.png">
                 </div>
             </div>
@@ -158,13 +202,17 @@
         <div class="row">
             <div id="panel-22" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/22.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/22.png">
+                    </div>
                     <img class="img-3x3" src="images/22bg.png">
                 </div>
             </div>
             <div id="panel-23" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/23.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/23.png">
+                    </div>
                     <img class="img-3x3" src="images/23bg.png">
                 </div>
             </div>
@@ -173,13 +221,17 @@
         <div class="row">
             <div id="panel-24" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/24.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/24.png">
+                    </div>
                     <img class="img-3x3" src="images/24bg.png">
                 </div>
             </div>
             <div id="panel-25" class="column">
                 <div class="img-border">
-                    <img class="jack img-3x3" src="images/25.png">
+                    <div class="img-foreground-position">
+                        <img class="jack img-3x3" src="images/25.png">
+                    </div>
                     <img class="img-3x3" src="images/25bg.png">
                 </div>
             </div>
@@ -187,7 +239,9 @@
 
         <div id="panel-26-27" class="row">
             <div class="img-border">
-                <img class="jack img-6x3" src="images/26.png">
+                <div class="img-foreground-position">
+                    <img class="jack img-6x3" src="images/26.png">
+                </div>
                 <img class="img-6x3" src="images/26bg.png">
             </div>
         </div>
