@@ -26,22 +26,3 @@ header .container {
 header h1, h2 {
     display: none;
 }
-
-#debug1 {
-    position: fixed;
-    width: 100%;
-
-    top: 50%;
-    border: 2px solid red;
-    z-index: 100;
-   
-}
-
-#debug2 {
-    position: fixed;
-    width: 100%;
-
-    top: 75%;
-    border: 2px solid blue;
-   z-index: 100;
-}
